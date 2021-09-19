@@ -9,7 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private lazy var label = UILabel()
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.backgroundColor = .black
+        label.layer.cornerRadius = 3;
+        label.layer.masksToBounds = true;
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
