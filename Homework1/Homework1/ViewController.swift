@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
 
-        button.setTitle("Hi!", for: .normal)
+        button.setTitle("Okay!", for: .normal)
         button.setTitleColor(.link, for: .normal)
         view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
