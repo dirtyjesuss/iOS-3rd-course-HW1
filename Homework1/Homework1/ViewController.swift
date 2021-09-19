@@ -43,6 +43,8 @@ class ViewController: UIViewController {
             button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+
+        print("Something")
     }
 }
 
