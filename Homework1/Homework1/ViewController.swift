@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         return label
     }()
 
+    private lazy var button = UIButton()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,8 +33,16 @@ class ViewController: UIViewController {
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+
+        button.setTitle("Hi!", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        view.addSubview(button)
+        button.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
-
-
 }
 
