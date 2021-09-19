@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         ])
 
         button.setTitle("Hi!", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.link, for: .normal)
         view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
 
